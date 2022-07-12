@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Kalkulator Depresiasi</title>
+	    <link rel="stylesheet" type="text/css" href="tampilan.css">
+
+	    <!-- pilihan metode depresiasi -->
+	    <script type = "text/javascript">
+			function garisRedirect() {
+				window.location.href = "metode_garis.html";
+			}
+	    </script>
+	    <script type = "text/javascript">
+			function aktivitasRedirect() {
+				window.location.href = "metode_aktivitas.html";
+			}
+	    </script>
+	    <script type = "text/javascript">  
+			function tahunRedirect() {
+				window.location.href = "metode_tahun.html";
+			}       
+	    </script>
+	    <script type = "text/javascript">  
+			function saldoRedirect() {
+				window.location.href = "metode_saldo.html";
+			}
+	    </script>
+	  </head>
+
+	<body>
+		<div class="wrapper fadeInDown" style="width:100%;height:100%;position:fixed;">
+			<div id="formContent">
+				<h2 class="active">Kalkulator Depresiasi</h2>
+
+				<input type="submit" class="fadeIn fourth" value="Metode Garis Lurus" onclick="garisRedirect()">
+				<input type="submit" class="fadeIn fourth" value="Metode Aktivitas" onclick="aktivitasRedirect()">
+				<input type="submit" class="fadeIn fourth" value="Metode Jumlah Angka Tahun" onclick="tahunRedirect()">
+				<input type="submit" class="fadeIn fourth" value="Metode Saldo Menurun" onclick="saldoRedirect()">
+
+				<div id="formFooter">
+					<a class="underlineHover">L200190070</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
